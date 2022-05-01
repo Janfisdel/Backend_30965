@@ -8,6 +8,7 @@
 | # | Contenido de la entrega|
 | ------------- | ------------- |
 | Clase 2  | Clases |
+| Clase 4  | Manejo de Archivos en Javascript |
 
 
 
