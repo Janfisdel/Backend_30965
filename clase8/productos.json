@@ -16,5 +16,11 @@
         "price": 845,
         "thumbnail": "https://res.cloudinary.com/janfis/image/upload/v1645743840/Backend/mini_budal_qrs1dw.jpg",
         "id": 3
+    },
+    {
+        "title": "Bandolera Coffe",
+        "price": "1453",
+        "thumbnail": "uploads\\1652831099250-coffe.jpg",
+        "id": 4
     }
 ]

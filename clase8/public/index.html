@@ -9,7 +9,7 @@
 <body>
     <h1>Formulario de ingreso de productos</h1>
 
-    <form action="/api/productos" method="POST">
+    <form action="/api/productos" method="POST" enctype="multipart/form-data">
         <div>
             <label for="title">Producto:</label>
             <input type="text" name="title" id="title">
@@ -19,8 +19,8 @@
             <input type="text" name="price" id="price">
         </div>
         <div>
-            <label for="thumbnail">URL imagen:</label>
-            <input type="text" name="thumbnail" id="thumbnail">
+            <label for="thumbnail">Imagen:</label>
+            <input type="file" name="thumbnail">
         </div>
 
         <input type="submit"  id="send">
