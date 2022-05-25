@@ -1,0 +1,20 @@
+if todos.length === 0
+    h3.vacio="No se encuentran productos disponibles"
+else
+    div.tablaProductos 
+        table.table.table-striped 
+            thead 
+                tr 
+                    th
+                    th Producto 
+                    th Precio 
+                    th Imágen 
+            tbody 
+            each prod in todos 
+                tr 
+                    th=prod.id 
+                    td=prod.title 
+                    td="$ " + prod.price 
+                    td 
+                        img.imgProducto( alt="foto", src=prod.thumbnail)
+

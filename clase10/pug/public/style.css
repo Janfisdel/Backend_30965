@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+}
+.bg-light2 {
+
+    background-color: rgba(193, 233, 16, 0.829);
+}
+
+.brand-new{
+    color:rgb(236, 98, 12) !important;
+    font-size: 1.5rem !important;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.titulo{
+    text-align: center;
+    margin:0.5rem;
+    text-transform: uppercase;
+    color:rgb(217, 44, 157)
+}
+
+.formulario{
+    margin:3rem;
+    padding: 1rem;
+    border: 2px solid rgba(218, 72, 72, 0.895);
+}
+
+.btn-primary{
+    background-color: rgba(193, 233, 16, 0.829) !important;
+    border-color: white !important;
+    color:black !important
+}
+
+.vacio{
+    color:orangered;
+    text-align: center;
+    margin: 5rem;
+    font-size: 2rem;
+    text-decoration: underline;
+
+}
+
+.tablaProductos {
+    margin:3rem;
+    padding: 1rem;
+    border: 2px solid rgba(218, 72, 72, 0.895);
+}
+
+.imgProducto{
+    width: 8rem;
+    height: 8rem;
+    border:2px solid black;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 30px rgb(64, 62, 62)
+}

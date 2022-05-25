@@ -1,0 +1,25 @@
+<h1 class="titulo">Ingreso de productos</h1>
+
+<div class="formulario">
+
+    <form action="/productos" method="POST">
+  <div class="mb-3">
+    <label for="title" class="form-label">Producto:</label>
+    <input type="text" class="form-control" name="title" placeholder="Ingrese nombre del producto" required>
+  </div>
+  <div class="mb-3">
+    <label for="price" class="form-label">Precio:</label>
+    <input type="number" class="form-control" name="price" placeholder="Ingrese el precio del producto" required>
+  </div>
+  <div class="mb-3">
+    <label for="thumbnail" class="form-label">URL Imágen:</label>
+    <input type="text" class="form-control" name="thumbnail" placeholder="Ingrese URL con imágen del producto" required>
+  </div>
+
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+
+</div>

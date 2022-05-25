@@ -1,0 +1,12 @@
+div.formulario
+        form(action="/productos" method="POST")
+            div.mb-3 
+                label.form-label(for="title") Producto: 
+                input.form-control(type="text", name="title", placeholder="Ingrese nombre del producto", required)
+            div.mb-3 
+                label.form-label(for="price") Precio: 
+                input.form-control(type="number", name="price", placeholder="Ingrese precio del producto", required)
+            div.mb-3 
+                label.form-label(for="thumbnail") Imágen: 
+                input.form-control(type="text", name="thumbnail", placeholder="Ingrese URL de imágen del producto", required)
+            button.btn.btn-primary(type="submit") Enviar
