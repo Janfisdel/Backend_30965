@@ -12,6 +12,7 @@
 | 3 | Clase 6  | Servidor con Express |
 | 4 | Clase 8  | API RESTful |
 | 5 | Clase 10 | Motores de plantillas |
+| 6 | Clase 12 | Websockets | 
 
 
 ## Creado por ✒️
