@@ -13,6 +13,7 @@
 | 4 | Clase 8  | API RESTful |
 | 5 | Clase 10 | Motores de plantillas |
 | 6 | Clase 12 | Websockets | 
+| 7 | clase 14 | Primera entrega del Proyecto Final | 
 
 
 ## Creado por ✒️
