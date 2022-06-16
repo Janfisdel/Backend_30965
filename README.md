@@ -14,6 +14,7 @@
 | 5 | Clase 10 | Motores de plantillas |
 | 6 | Clase 12 | Websockets | 
 | 7 | clase 14 | Primera entrega del Proyecto Final | 
+| 8 | clase 16 | NUESTRA PRIMERA BASE DE DATOS | 
 
 
 ## Creado por ✒️
