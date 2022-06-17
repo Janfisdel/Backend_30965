@@ -25,28 +25,25 @@ app.set("view engine", "ejs")
 io.on('connection', async (socket)=>{
     console.log(`Usuario ${socket.id} conectado`)
    
-    const todos = await (dbProductos.getAll())
-    socket.emit('productosPrevios', todos)
+    socket.emit('productosPrevios', await (dbProductos.getAll()))
    
-    socket.on('nuevoProducto', data=>{
-        dbProductos.save(data)
-        .then(async ()=>{
-            io.sockets.emit('productosPrevios', await (dbProductos.getAll()))
-        })
+    socket.on('nuevoProducto', async data=>{
+        await dbProductos.save(data)
+        
+        io.sockets.emit('productosPrevios', await (dbProductos.getAll()))
     })
 
     socket.emit('mensajePrevios', await (dbChat.getAll()))
 
-    socket.on('nuevoMensaje', data=>{
-        dbChat.save(data)
-        .then(async()=>{
-            io.sockets.emit('mensajePrevios', await (dbChat.getAll()))
+    socket.on('nuevoMensaje', async data=>{
+        await dbChat.save(data)
+        io.sockets.emit('mensajePrevios', await (dbChat.getAll()))
         })
     })
 
     
     
-})
+
 
 app.get('/', (req, res)=>{
     res.render('index')

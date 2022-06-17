@@ -1,4 +1,4 @@
-const {optionsSqlite} = require('../db/sqlite')
+const {optionsSqlite} = require('./db/sqlite')
 const knex = require('knex')(optionsSqlite)
 
 
