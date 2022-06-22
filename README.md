@@ -13,8 +13,9 @@
 | 4 | Clase 8  | API RESTful |
 | 5 | Clase 10 | Motores de plantillas |
 | 6 | Clase 12 | Websockets | 
-| 7 | clase 14 | Primera entrega del Proyecto Final | 
-| 8 | clase 16 | NUESTRA PRIMERA BASE DE DATOS | 
+| 7 | proyectoFinal_primeraEntrega| Primera entrega del Proyecto Final | 
+| 8 | Clase 16 | NUESTRA PRIMERA BASE DE DATOS | 
+| 9 | Clase 18 | MONGODB |
 
 
 ## Creado por ✒️
