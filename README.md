@@ -16,6 +16,7 @@
 | 7 | proyectoFinal_primeraEntrega| Primera entrega del Proyecto Final | 
 | 8 | Clase 16 | NUESTRA PRIMERA BASE DE DATOS | 
 | 9 | Clase 18 | MONGODB |
+|10 | proyectoFinal_segundaEntrega| Segunda entrega del Proyecto Final |
 
 
 ## Creado por ✒️
