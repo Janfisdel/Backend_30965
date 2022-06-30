@@ -26,7 +26,7 @@ class ContenedorMongoDB {
     }
 
     create(data){
-       const newmodel = new this.model(data)
+       const newmodel = new this.model({...data, timestamp:Date()})
         return this.connection
             .then(_ => newmodel.save())
             .then(document =>{
@@ -55,6 +55,7 @@ class ContenedorMongoDB {
             .then(item=>{
                 return item.remove()
             })
+            .then(_=>console.log(`Elemento eliminado`))
             .catch(err=>{console.error(`Error: ${err.message}`)})
 }
 }

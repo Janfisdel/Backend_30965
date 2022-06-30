@@ -4,7 +4,7 @@ const ProductosDAOFirebase = require('./productosDAO/productosDaoFirebase')
 const CarritosDAOFirebase = require('./carritosDAO/carritosDaoFirebase')
 
 const getStorage = ()=>{
-    const storage = process.env.STORAGE || 'firebase'
+    const storage = process.env.STORAGE || 'mongo'
     switch(storage){
         case 'mongo':
             return {
@@ -23,6 +23,7 @@ const getStorage = ()=>{
                 products: new ProductosDAOMongoDB(),
                 carrito: new CarritosDAOMongoDB()
             }
+	    break
 
         
     }

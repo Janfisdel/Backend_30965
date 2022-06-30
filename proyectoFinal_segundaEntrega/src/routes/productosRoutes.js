@@ -2,6 +2,16 @@ const {Router} = require('express')
 const {products: productsStorage} = require('../DAOs')()
 const productsRouter = Router()
 
+
+const adminMiddleware = (req, res, next) =>{
+	if(req.query.admin === 'true'){
+		return next()
+	}
+	return res.status(401).json({
+		error: 401,
+		descripcion:'No tiene acceso a esta ruta'
+		})
+	}
 productsRouter.get('', (req, res)=>{
        return productsStorage.findAll()
         .then(productos =>{
@@ -20,7 +30,7 @@ productsRouter.get('/:id',(req, res)=>{
 })
 
 
-productsRouter.post('', (req, res)=>{
+productsRouter.post('', adminMiddleware, (req, res)=>{
     const data =req.body
     return productsStorage.create(data)
         .then(_ =>{
@@ -28,7 +38,7 @@ productsRouter.post('', (req, res)=>{
         })
 })
 
-productsRouter.put('/:id', (req, res)=>{
+productsRouter.put('/:id', adminMiddleware, (req, res)=>{
     const {id} = req.params
     const data = req.body
     return productsStorage.update(id, data)
@@ -37,7 +47,7 @@ productsRouter.put('/:id', (req, res)=>{
         })
 })
 
-productsRouter.delete('/:id', (req, res)=>{
+productsRouter.delete('/:id', adminMiddleware, (req, res)=>{
     const {id} = req.params
     return productsStorage.delete(id)
         .then(_ =>{

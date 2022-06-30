@@ -3,9 +3,9 @@ const {carrito: carritoStorage, products:productsStorage} = require('../DAOs')()
 const carritoRouter = Router()
 
 carritoRouter.post('', (req, res)=>{
-    return carritoStorage.create({productos:[], timestamp:Date()})
-        .then(_=>{
-            return res.status(201).json(`Nuevo carrito agregado`)
+    return carritoStorage.create({productos:[]})
+        .then(carrito=>{
+            return res.status(201).json(`Nuevo carrito agregado id: ${carrito._id}`)
         })
 })
 
