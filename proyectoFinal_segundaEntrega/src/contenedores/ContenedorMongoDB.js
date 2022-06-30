@@ -1,4 +1,4 @@
-
+// contenedores/ContenedorMongoDB.js
 const { ObjectId } = require("bson")
 
 class ContenedorMongoDB {
