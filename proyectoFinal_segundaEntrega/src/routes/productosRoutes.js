@@ -1,3 +1,4 @@
+// routes/productosRoutes.js
 const {Router} = require('express')
 const {products: productsStorage} = require('../DAOs')()
 const productsRouter = Router()
