@@ -1,3 +1,4 @@
+// contenedores/ContenedorFirebase.js
 class ContenedorFirebase{
     constructor(query){
         this.query = query
