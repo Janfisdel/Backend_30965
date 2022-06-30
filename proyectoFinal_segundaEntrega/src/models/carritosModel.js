@@ -1,4 +1,4 @@
-// models/carritoModel.js
+// models/carritosModel.js
 const { Schema, model } = require('mongoose')
 
 const carritoSchema = new Schema({
@@ -7,4 +7,4 @@ const carritoSchema = new Schema({
  
 })
 
-module.exports = model('Carritos', carritoSchema)
+module.exports = model('Carrito', carritoSchema)
