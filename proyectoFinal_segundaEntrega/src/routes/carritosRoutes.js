@@ -45,7 +45,7 @@ carritoRouter.delete('/:id/productos/:id_prod', async (req, res)=>{
     const producto = await productsStorage.find(id_prod)
     const carrito = await carritoStorage.find(id)
 
-    const buscar = carrito.productos.find(prod =>prod.title ===producto.title)
+    const buscar = carrito.productos.find(prod =>prod.nombre ===producto.nombre)
     console.log(buscar)
 
     if (buscar){
