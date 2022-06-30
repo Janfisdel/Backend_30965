@@ -11,4 +11,4 @@ const productoSchema = new Schema({
  timestamp:{ type: Date, required: true},
 })
 
-module.exports = model('Productos', productoSchema)
+module.exports = model('Producto', productoSchema)
