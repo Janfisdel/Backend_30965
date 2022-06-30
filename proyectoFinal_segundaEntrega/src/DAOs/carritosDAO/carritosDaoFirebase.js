@@ -1,3 +1,4 @@
+// carritosDAO/carritosDaoFirebase.js
 const ContenedorFirebase = require ('../../contenedores/ContenedorFirebase')
 const {queryCarritos} = require('../../db/configFirebase')
 
