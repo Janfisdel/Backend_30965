@@ -1,4 +1,4 @@
-// carritosDAO/carritosDaoMongoDB.js
+// DAOs/carritosDAO/carritosDaoMongoDB.js
 const ContenedorMongoDB = require ('../../contenedores/ContenedorMongoDB')
 const configMongoDB = require('../../db/configMongoDB')
 const modelCarritoMongoDB = require('../../models/carritosModel')
