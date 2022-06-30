@@ -1,3 +1,4 @@
+// routes/carritosRoutes.js
 const {Router} = require('express')
 const {carrito: carritoStorage, products:productsStorage} = require('../DAOs')()
 const carritoRouter = Router()
