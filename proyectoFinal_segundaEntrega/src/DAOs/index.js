@@ -1,3 +1,4 @@
+// DAOs/index.js
 const ProductosDAOMongoDB = require('./productosDAO/productosDaoMongoDB')
 const CarritosDAOMongoDB = require('./carritosDAO/carritosDaoMongoDB')
 const ProductosDAOFirebase = require('./productosDAO/productosDaoFirebase')
