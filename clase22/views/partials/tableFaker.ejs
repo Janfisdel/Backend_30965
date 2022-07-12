@@ -1,0 +1,27 @@
+<!-- partials/tableFaker.ejs -->
+<h1 class="titulo">Test de productos - Faker</h1>
+
+    <div class="tablaProductos">
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Precio</th>
+                <th>Imagen</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% prodFaker.forEach(prod=>{  %>
+                <tr>
+                    <td><%= prod.id %></td>
+                    <td><%= prod.title %></td>
+                    <td> $ <%= prod.price %></td>
+                    <td><img alt="foto" class="imgProducto" src=<%=prod.thumbnail %>></td>
+                </tr>
+            <% }) %>
+            
+        </tbody>
+    </table>
+    </div>

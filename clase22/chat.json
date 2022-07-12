@@ -1,0 +1,41 @@
+{
+    "id": 123,
+    "mensajes": [
+        {
+            "id": 1,
+            "author": {
+                "email": "jana@mail.com",
+                "nombre": "Jana",
+                "apellido": "Fisdel",
+                "edad": 32,
+                "alias": "jana",
+                "avatar": "https://res.cloudinary.com/janfis/image/upload/v1657658642/Backend/avatar/avatarMujer_a4nwpm.jpg"
+            },
+            "text": "Hola! Este es mi primer mensaje"
+        },
+        {
+            "id": 2,
+            "author": {
+                "email": "pedro@mail.com",
+                "nombre": "Pedro",
+                "apellido": "Gonzalez",
+                "edad": 45,
+                "alias": "pedrito",
+                "avatar": "https://res.cloudinary.com/janfis/image/upload/v1657658642/Backend/avatar/avatarHombre_k7wrht.png"
+            },
+            "text": "Hola a todos!"
+        },
+        {
+            "id": 3,
+            "author": {
+                "email": "jana@mail.com",
+                "nombre": "Jana",
+                "apellido": "Fisdel",
+                "edad": 32,
+                "alias": "Jana",
+                "avatar": "https://res.cloudinary.com/janfis/image/upload/v1657658642/Backend/avatar/avatarMujer_a4nwpm.jpg"
+            },
+            "text": "Buenas tardes"
+        }
+    ]
+}
