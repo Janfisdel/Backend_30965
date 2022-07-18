@@ -1,0 +1,109 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+}
+.bg-light2 {
+
+    background-color: rgba(224, 91, 224, 0.579);
+}
+
+.brand-new{
+    color:rgb(236, 12, 57) !important;
+    font-size: 1.5rem !important;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.active {
+    font-weight: bold !important;
+}
+
+.titulo{
+    text-align: center;
+    margin:0.5rem;
+    text-transform: uppercase;
+    color:rgb(74, 92, 213)
+}
+
+.formulario{
+    margin:3rem;
+    padding: 1rem;
+    border: 2px solid rebeccapurple;
+}
+
+.btn-primary{
+    background-color: rgba(224, 91, 224, 0.579) !important;
+    border-color: white !important;
+    color:black !important
+}
+
+.empty{
+    color:palevioletred;
+    text-align: center;
+    margin: 5rem;
+    font-size: 2rem;
+    text-decoration: underline;
+
+}
+
+.tablaProductos {
+    margin:3rem;
+    padding: 1rem;
+    border: 2px solid rebeccapurple;
+}
+
+.imgProducto{
+    width: 8rem;
+    height: 8rem;
+    border:2px solid black;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 30px rgb(64, 62, 62)
+}
+
+.chatContainer{
+    background-color: rgba(255, 225, 127, 0.422);
+}
+
+.chatTitulo{
+    color:orangered
+}
+
+.email{
+    font-weight: bold;
+    color:blue
+}
+
+.fecha{
+    color:brown
+}
+
+.mensaje{
+    font-style: italic;
+    color:green
+}
+
+.user{
+    text-transform: uppercase ;
+    color:rgb(112, 42, 165);
+
+}
+
+.botonUser{
+    background-color: rgb(255, 183, 0);
+    padding: 0.4rem;
+    border-radius: 20%;
+    border-color:rgb(255, 119, 0) ;
+    
+}
+.link{
+    text-decoration: none;
+    color:black;
+    
+}
+.containerUser{
+    margin: 1rem;
+    display: flex;
+    justify-content: space-around;
+}

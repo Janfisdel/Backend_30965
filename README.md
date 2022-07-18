@@ -18,6 +18,7 @@
 | 9 | Clase 18 | MONGODB |
 |10 | proyectoFinal_segundaEntrega| Segunda entrega del Proyecto Final |
 |11 | Clase 22 | Mocks y normalización |
+|12 | Clase 24 | LOG-IN POR FORMULARIO |
 
 
 ## Creado por ✒️
