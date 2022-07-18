@@ -51,15 +51,21 @@ io.on('connection', async(socket)=>{
 
 //DESAFIO SESSIONS
 app.use(session({
-    store: MongoStore.create({
-        mongoUrl:'mongodb+srv://janadf:DDjm6y4bDSond5JV@cluster0.mfnvl.mongodb.net/30965_sessions?retryWrites=true&w=majority',
-        ttl:60
-    }),
+    cookie:{
+        httpOnly:true,
+        maxAge:600000,
+        signed:true,
+    },
+    name: 'ch-session',
+    resave:false,
+    saveUninitialized:false,
     secret:'qwerty',
-    resave: true,
-    saveUninitialized: true
-}))
+    store: MongoStore.create({
+        mongoUrl:'mongodb+srv://janadf:DDjm6y4bDSond5JV@cluster0.mfnvl.mongodb.net/30965_sessions?retryWrites=true&w=majority'
+    }),
+    ttl:60
 
+}))
 
 
 app.get('/login', (req, res)=>{     
@@ -85,22 +91,19 @@ app.post('/login',(req,res)=>{
     })
 
     app.get('/logout', (req, res)=>{
-        if(req.session.name){
-            const name=req.session.name
-            req.session.destroy(err=>{
-            if(!err){
-                return res.json({logout:true})
+        const name = req.session.name
+        req.session.destroy(error=>{
+            if(!error){
+               return res.render('logout', {name})
             }
-            return res.json({error:err})
-        })
-        res.render('logout',{name})
-        }
-        return res.redirect('/login')
+           return  res.redirect('/login')
     
     })
+})
 
 const PORT = 8080
 httpServer.listen(PORT, ()=>{
     console.log(`Servidor escuchando en http://localhost:${PORT}`)
 })
+
 

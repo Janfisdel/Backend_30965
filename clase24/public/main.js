@@ -60,13 +60,3 @@ sendMensaje.addEventListener('click', (e)=>{
     inputMensaje.value= " "
 })
 
-//DESAFIO SESSIONS
-// const inputUser = document.getElementById("inputUser")
-// const sendUser = document.getElementById("sendUser")
-// const bienvenidaUser = document.getElementById("bienvenidaUser")
-
-// sendUser.addEventListener('click', (e)=>{
-//     e.preventDefault
-//     bienvenidaUser.innerHTML = `Bienvenida ${inputUser.Value}`
-    
-// })
