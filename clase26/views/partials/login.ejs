@@ -1,0 +1,24 @@
+<!-- partials/login.ejs -->
+
+<div class="container login">
+    <h1 class="user">Login de usuario</h1>
+    <form class="formulario" action="/login" method="POST">
+        
+            <div>
+                <label for="username" class="form-label">Nombre de usuario:</label>
+                <input type="text" name="username" class="form-control">
+            </div>
+            <div>
+                <label for="password" class="form-label">Contraseña:</label>
+                <input type="password" name="password" class="form-control">
+            </div>
+            <div>
+                <button type="submit" class="botonUser">Iniciar sesion</button>
+            </div>
+            
+        </form>
+
+        <button class="botonUser"><a class="link" href="http://localhost:8080/signup">Registrarse</a></button>
+</div>
+
+
