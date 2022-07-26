@@ -129,11 +129,11 @@ passport.deserializeUser((id, done)=>{
         
 
 app.get('/login', (req, res)=>{
-    return res.render('login', {message:req.flash('error')})
+    return res.render('login')
 })
 
 app.get('/signup' , (req, res)=>{
-    return res.render('signUp', {message:req.flash('error')})
+    return res.render('signUp')
 })
 
 app.get('/errorSignUp' , (req, res)=>{
