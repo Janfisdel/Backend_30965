@@ -20,6 +20,7 @@
 |11 | Clase 22 | Mocks y normalización |
 |12 | Clase 24 | LOG-IN POR FORMULARIO |
 |13 | Clase 26 | Inicio de sesion (passport) | 
+|14 | Clase 28 | Global & Child process |
 
 
 ## Creado por ✒️

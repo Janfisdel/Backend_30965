@@ -1,0 +1,24 @@
+<div class="container">
+    <h1 class="user">Registro de usuario</h1>
+    
+    <form class="formulario" action="/signUp" method="POST">
+        <div>
+            <label for="username" class="form-label">Nombre de usuario:</label>
+            <input type="text" name="username" class="form-control" >
+        </div>
+        <div>
+            <label for="password" class="form-label">Contraseña:</label>
+            <input type="password" name="password" class="form-control" >
+        </div>
+        <div>
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" name="email" class="form-control" >
+        </div>
+        <div>
+            <button type="submit" class="botonUser">Registrarse</button>
+        </div>
+    </form>
+
+    <button class="botonUser"><a class="link" href="http://localhost:8080/login">Iniciar sesión</a></button>
+
+</div>
