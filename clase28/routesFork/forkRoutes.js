@@ -2,13 +2,14 @@ const {Router} = require("express")
 const forkRouter = Router()
 const {fork} = require("child_process")
 
-
 forkRouter.get('/', (req, res)=>{
-    const cant = req.query || 100000000
+    const cant = Number(req.query.cant)|| 1e8
     const random= fork('./forkRandom.js')
-    random.on('message', valores=>{
+    random.send(cant)
+    random.on('message', result=>{
     
-        return res.end(`objeto de valores: ${valores}`)
+        jsonResult = JSON.stringify(result)
+        return res.end(`objeto de valores: ${jsonResult}`)
     } )
  })
 
